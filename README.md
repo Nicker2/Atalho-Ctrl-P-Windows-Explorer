@@ -34,9 +34,19 @@ O processo envolve vários arquivos e scripts interconectados. Abaixo estão os 
 
 ### **1. `executar_iniciar_ctrlp.BAT`**
 
-Este arquivo **BAT** é responsável por iniciar o processo do script Python. Ele chama o script `iniciar_ctrlp.py`, que, por sua vez, executa outro script invisível que roda o processo de impressão no Windows Explorer. 
+Este arquivo BAT é responsável por iniciar o processo do script Python. Ele chama o script `iniciar_ctrlp.py`, que, por sua vez, executa outro script invisível que roda o processo de impressão no **Windows Explorer**.
 
 - **Caminho de instalação**: ajuste conforme necessário para o seu ambiente de instalação, substituindo `D:\Meus Documentos\Documentos\Nova pasta\` pelo diretório correto.
+
+### **Colocando o Script na Pasta de Inicialização do Windows**
+
+Para que o script seja executado automaticamente toda vez que o **Windows** for iniciado, você pode colocar o arquivo `executar_iniciar_ctrlp.BAT` na pasta de inicialização do Windows. Para isso:
+
+1. Abra o **Explorador de Arquivos**.
+2. Digite `shell:startup` na barra de endereços e pressione Enter.
+3. No diretório que abrir, cole o arquivo `executar_iniciar_ctrlp.BAT`.
+
+Ao fazer isso, o script será executado automaticamente sempre que o Windows iniciar, sem a necessidade de ação manual.
 
 ### **2. `iniciar_ctrlp.py`**
 
